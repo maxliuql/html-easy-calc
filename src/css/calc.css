@@ -1,0 +1,57 @@
+@font-face {
+	font-family: digits;
+	src: url("../fonts/DS-DIGI-1.ttf") format("truetype");
+}
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.main {
+	display: flex;
+	margin: auto;
+	width: 300px;
+	height: 500px;
+	background-color: #eee;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 25px;
+}
+.output {
+	display: flex;
+	width: 270px;
+	height: 75px;
+	position: absolute;
+	top: 15px;
+	left: calc(calc(calc(100% - 300px) / 2) + 15px);
+	background-color: white;
+	border-radius: 20px;
+}
+.outputText {
+	font-family: digits;
+	position: absolute;
+	right: 5px;
+	font-size: 75px;
+	margin: 0px;
+}
+.buttons {
+	display: flex;
+	position: absolute;
+	top: 130px;
+}
+.buttonTD {
+	padding: 6.25px;
+}
+.button {
+	width: 60px;
+	height: 60px;
+	background-color: white;
+	border-radius: 50%;
+	cursor: pointer;
+	text-align: center;
+}
+.buttonText {
+	margin: 0px;
+	padding-top: 8.25px;
+	font-size: 30px;
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>计算器 - Calculator</title>
+		<meta name="description" content="这是一个由HTML、CSS与JS共同组成的简易网页计算器！">
+		<meta name="author" content="Max Liu">
+		<meta name="keywords" content="计算器, calculator, web">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./src/css/calc.css">
+		<link rel="icon" href="./src/img/favicon.ico">
+		<script src="./src/js/jquery.js"></script>
+	</head>
+	<body>
+		<main class="main">
+			<div class="output">
+				<p class="outputText"></p>
+			</div>
+			<div class="buttons">
+				<table>
+					<tbody>
+						<tr>
+							<td class="buttonTD"><div class="button" id="btnAC"><p class="buttonText">AC</p></div></td>
+							<td class="buttonTD"><div class="button" id="btnDEL"><p class="buttonText">←</p></div></td>
+							<td class="buttonTD"><div class="button" id="btnMOD"><p class="buttonText">%</p></div></td>
+							<td class="buttonTD"><div class="button" id="btnADD"><p class="buttonText">+</p></div></td>
+						</tr>
+						<tr>
+							<td class="buttonTD"><div class="button" id="btn1"><p class="buttonText">1</p></div></td>
+							<td class="buttonTD"><div class="button" id="btn2"><p class="buttonText">2</p></div></td>
+							<td class="buttonTD"><div class="button" id="btn3"><p class="buttonText">3</p></div></td>
+							<td class="buttonTD"><div class="button" id="btnMIN"><p class="buttonText">-</p></div></td>
+						</tr>
+						<tr>
+							<td class="buttonTD"><div class="button" id="btn4"><p class="buttonText">4</p></div></td>
+							<td class="buttonTD"><div class="button" id="btn5"><p class="buttonText">5</p></div></td>
+							<td class="buttonTD"><div class="button" id="btn6"><p class="buttonText">6</p></div></td>
+							<td class="buttonTD"><div class="button" id="btnTME"><p class="buttonText">&times;</p></div></td>
+						</tr>
+						<tr>
+							<td class="buttonTD"><div class="button" id="btn7"><p class="buttonText">7</p></div></td>
+							<td class="buttonTD"><div class="button" id="btn8"><p class="buttonText">8</p></div></td>
+							<td class="buttonTD"><div class="button" id="btn9"><p class="buttonText">9</p></div></td>
+							<td class="buttonTD"><div class="button" id="btnDIV"><p class="buttonText">&divide;</p></div></td>
+						</tr>
+						<tr>
+							<td class="buttonTD"><div class="button" id="btnDBZ"><p class="buttonText">00</p></div></td>
+							<td class="buttonTD"><div class="button" id="btn0"><p class="buttonText">0</p></div></td>
+							<td class="buttonTD"><div class="button" id="btnDOT"><p class="buttonText">.</p></div></td>
+							<td class="buttonTD"><div class="button" id="btnCLC"><p class="buttonText">=</p></div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+		<script src="./src/js/calc.js"></script>
+	</body>
+</html>
