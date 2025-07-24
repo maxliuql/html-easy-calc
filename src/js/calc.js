@@ -4,7 +4,7 @@ $(document).ready(function() {
 		var num = id.replace('btn','');
 		if(isNaN(Number(num))) {
 			switch(num) {
-				case 'AC' : now = '';                          break;
+				case 'AC' : now = '';                           break;
 				case 'DEL': now = now.slice(0, now.length - 1); break;
 				case 'MOD': now += '%';                         break;
 				case 'ADD': now += '+';                         break;
@@ -26,7 +26,7 @@ $(document).ready(function() {
 		}
 	}, calc = function calc() {
 		try {
-			var x = eval(now);
+			var x = Math.floor(eval(now)*1e7)/1e7;
 			$('.outputText').text(x);
 			if(String(x).length > 7) {
 				err();
